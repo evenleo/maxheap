@@ -23,9 +23,9 @@ public:
             percolateUp(i);
         }
     }
-    size_type size() { return _size; }
-    size_type capacity() { return _capacity; }
-    bool empty() { return _size == 0; }
+    size_type size() const { return _size; }
+    size_type capacity() const { return _capacity; }
+    bool empty() const { return _size == 0; }
     void insert(value_type val) {
         if (_size == _capacity) {
             _capacity *= 2;
